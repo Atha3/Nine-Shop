@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Pengguna - Nine-Shop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('assets/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      padding: 40px 20px;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px 25px;
+      border-radius: 16px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .logo img {
+      width: 50px;
+      vertical-align: middle;
+    }
+
+    .logo span {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo .nine {
+      color: #667eea;
+    }
+
+    .logo .shop {
+      color: #4ecdc4;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #444;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .btn-submit {
+      background-color: #6c63ff;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      width: 100px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn-reset {
+      background-color: #ccc;
+      color: #333;
+      border: none;
+      padding: 12px;
+      width: 100px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    .footer-links {
+      margin-top: 20px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .footer-links a {
+      color: #3333cc;
+      text-decoration: none;
+      display: block;
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="logo">
+      <img src="assets/Logo.png" alt="Nine-Shop Logo" />
+      <span><span class="nine">Nine</span>-<span class="shop">Shop</span></span>
+    </div>
+    <h2>Selamat Datang di Nine-Shop</h2>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Masukkan Username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Masukkan Password" required />
+
+      <label for="repeat-password">Ketik Ulang Password</label>
+      <input type="password" id="repeat-password" placeholder="Ulangi Password" required />
+
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" placeholder="Nama Lengkap" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email aktif" required />
+
+      <label for="tgl">Tanggal Lahir</label>
+      <input type="date" id="tgl" required />
+
+      <label for="jk">Jenis Kelamin</label>
+      <select id="jk" required>
+        <option value="">-- Pilih --</option>
+        <option value="l">Laki-laki</option>
+        <option value="p">Perempuan</option>
+      </select>
+
+      <label for="alamat">Alamat</label>
+      <textarea id="alamat" rows="3" placeholder="Alamat Lengkap" required></textarea>
+
+      <label for="ket">Keterangan</label>
+      <textarea id="ket" rows="2" placeholder="Keterangan tambahan..."></textarea>
+
+      <label for="kontak">Kontak</label>
+      <input type="text" id="kontak" placeholder="Nomor WA / Telepon" />
+
+      <div>
+        <button type="submit" class="btn-submit">Submit</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+    </form>
+
+    <div class="footer-links">
+      <a href="loginadmin.html">Login sebagai Admin?Klik disini</a>
+    </div>
+  </div>
+</body>
+</html>
